@@ -936,7 +936,7 @@ margin: auto;
 .f1{
 	word-wrap: normal;
 	border:0.05px solid rgb(180, 180, 180);
-	background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) ),url(../Images/food1.png);
+	
 	height: 0.01px;
 	background-position:center;
 	background-repeat: no-repeat;
