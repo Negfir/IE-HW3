@@ -1,7 +1,3 @@
-
-
-
-
 function loginClickL()
 {
 $( ".middle" ).load("../src/login.html");
@@ -15,5 +11,4 @@ function loginClickR()
 $( ".middle" ).load("../src/register.html");
 //$( ".middle" ).css(z-index:9)
 }
-
 

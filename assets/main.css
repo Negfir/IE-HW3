@@ -396,6 +396,101 @@ clear:none;
 	
 }
 
+#resP1{
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.9rem;
+	line-height: 3rem;
+	margin-top:6px;
+	color: black;
+	background-color: transparent;
+}
+
+#resFood1{
+
+	text-align: center;
+	font-size: 1.2rem;
+	line-height: 3rem;
+	margin-top:40px;
+	color:  	rgb(96,96,96);
+	background-color: transparent;
+}
+
+#resAdd1{
+	background-image: linear-gradient(270deg,rgb(128,128,128) 60%,rgba(0,0,0,0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	text-align: center;
+	font-size: 1.2rem;
+	line-height: 3rem;
+	margin-top:-15px;
+	color: 	rgb(144,144,144);
+	background-color: transparent;
+}
+
+#resP2{
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.9rem;
+	line-height: 3rem;
+	margin-top:6px;
+	color: black;
+	background-color: transparent;
+}
+
+#resFood2{
+
+	text-align: center;
+	font-size: 1.2rem;
+	line-height: 3rem;
+	margin-top:40px;
+	color:  	rgb(96,96,96);
+	background-color: transparent;
+}
+
+#resAdd2{
+	background-image: linear-gradient(270deg,rgb(128,128,128) 60%,rgba(0,0,0,0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	text-align: center;
+	font-size: 1.2rem;
+	line-height: 3rem;
+	margin-top:-15px;
+	color: 	rgb(144,144,144);
+	background-color: transparent;
+}
+
+#resP3{
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.9rem;
+	line-height: 3rem;
+	margin-top:6px;
+	color: black;
+	background-color: transparent;
+}
+
+#resFood3{
+
+	text-align: center;
+	font-size: 1.2rem;
+	line-height: 3rem;
+	margin-top:40px;
+	color:  	rgb(96,96,96);
+	background-color: transparent;
+}
+
+#resAdd3{
+	background-image: linear-gradient(270deg,rgb(128,128,128) 60%,rgba(0,0,0,0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	text-align: center;
+	font-size: 1.2rem;
+	line-height: 3rem;
+	margin-top:-15px;
+	color: 	rgb(144,144,144);
+	background-color: transparent;
+}
 
 
 #container2 {
@@ -404,7 +499,7 @@ clear:none;
 	position:absolute;
 	left: 0;
 right: 0;
-	margin: 50px;
+	margin: 60px;
 		
     height: 125px;
     
@@ -417,7 +512,7 @@ right: 0;
 }
 
 .box4{
-	
+	position: reletive;
 	background: url(../Images/box4.png);
 	height: 0.01px;
 	background-position:right;
@@ -434,6 +529,63 @@ right: 0;
     zoom: 1	
 	
 }
+
+#res1{
+	
+	background: url(../Images/hut1.png);
+	background-position:right;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: static;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:30px;
+	right: 20px;
+    height:100px;
+    width:100px;
+	background: white;
+	box-shadow: 3px 3px 10px 1px  #ccc;
+		
+}
+
+
+#res2{
+	
+	background: url(../Images/hut1.png);
+	background-position:right;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: static;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:30px;
+	right: 20px;
+    height:100px;
+    width:100px;
+	background: white;
+	box-shadow: 3px 3px 10px 1px  #ccc;
+		
+}
+
+
+#res3{
+	
+	background: url(../Images/hut1.png);
+	background-position:right;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: static;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:30px;
+	right: 20px;
+    height:100px;
+    width:100px;
+	background: white;
+	box-shadow: 3px 3px 10px 1px  #ccc;
+		
+}
+
 .box5{
 	background: url(../Images/box5.png);
 	height: 0.01px;
@@ -490,7 +642,7 @@ clear:none;}
 
 .shoro{
 	position: absolute;
-	 margin-top: 325px;
+	 margin-top: -10px;
 	 margin-right: 108px;
 	border-radius: 20px;
     height:36px;

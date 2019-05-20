@@ -28,7 +28,24 @@ var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var myObj = JSON.parse(this.responseText);
-    for(i = 3; i < myObj.restaurants.length; i++){
+	document.getElementById("res1").style.background= "url("+myObj.restaurants[0].imgUrl+")";
+	document.getElementById("res1").style.backgroundSize = "100% 100%" ;
+	document.getElementById("resP1").innerHTML=myObj.restaurants[0].name;
+	document.getElementById("resFood1").innerHTML=myObj.restaurants[0].foods[0]+" &bull; "+myObj.restaurants[0].foods[1]+" &bull; "+myObj.restaurants[0].foods[2]+" &bull; "+myObj.restaurants[0].foods[3];
+    document.getElementById("resAdd1").innerHTML=myObj.restaurants[0].address;	
+	
+	document.getElementById("res2").style.background= "url("+myObj.restaurants[1].imgUrl+")";
+	document.getElementById("res2").style.backgroundSize = "100% 100%" ;
+	document.getElementById("resP2").innerHTML=myObj.restaurants[1].name;
+	document.getElementById("resFood2").innerHTML=myObj.restaurants[1].foods[0]+" &bull; "+myObj.restaurants[1].foods[1]+" &bull; "+myObj.restaurants[1].foods[2]+" &bull; "+myObj.restaurants[0].foods[3];
+    document.getElementById("resAdd2").innerHTML=myObj.restaurants[1].address;	
+	
+	document.getElementById("res3").style.background= "url("+myObj.restaurants[2].imgUrl+")";
+	document.getElementById("res3").style.backgroundSize = "100% 100%" ;
+	document.getElementById("resP3").innerHTML=myObj.restaurants[2].name;
+	document.getElementById("resFood3").innerHTML=myObj.restaurants[2].foods[0]+" &bull; "+myObj.restaurants[2].foods[1]+" &bull; "+myObj.restaurants[2].foods[2]+" &bull; "+myObj.restaurants[0].foods[3];
+    document.getElementById("resAdd3").innerHTML=myObj.restaurants[2].address;
+	for(i = 3; i < myObj.restaurants.length; i++){
 		var c = document.getElementById("j"+i);
 		//var b = document.getElementsByClassName("r"+i);
 		msg = myObj.restaurants[i];
