@@ -411,7 +411,7 @@ clear:none;
 	text-align: center;
 	font-size: 1.2rem;
 	line-height: 3rem;
-	margin-top:40px;
+	margin-top:-12px;
 	color:  	rgb(96,96,96);
 	background-color: transparent;
 }
@@ -443,7 +443,7 @@ clear:none;
 	text-align: center;
 	font-size: 1.2rem;
 	line-height: 3rem;
-	margin-top:40px;
+	margin-top:-30px;
 	color:  	rgb(96,96,96);
 	background-color: transparent;
 }
@@ -475,7 +475,7 @@ clear:none;
 	text-align: center;
 	font-size: 1.2rem;
 	line-height: 3rem;
-	margin-top:40px;
+	margin-top:-12px;
 	color:  	rgb(96,96,96);
 	background-color: transparent;
 }
@@ -529,6 +529,112 @@ right: 0;
     zoom: 1	
 	
 }
+
+#rate1{
+	font-weight: bold;
+	font-size: 1.2rem;
+	position: relative;
+	top:-24px;
+	right:110px;
+	direction: ltr;
+	z-index:3;
+	color: 	#fde16d;
+}
+#c1{
+	
+	font-size: 1rem;
+	position: relative;
+	top:-24px;
+	right:210px;
+	direction: ltr;
+	z-index:3;
+	color: 	grey;
+}
+#c2{
+	
+	font-size: 1rem;
+	position: relative;
+	top:-33px;
+	right:210px;
+	direction: ltr;
+	z-index:3;
+	color: 	grey;
+}
+#c3{
+	
+	font-size: 1rem;
+	position: relative;
+	top:-24px;
+	right:210px;
+	direction: ltr;
+	z-index:3;
+	color: 	grey;
+}
+
+#rate2{
+	font-weight: bold;
+	font-size: 1.2rem;
+	position: relative;
+	top:-30px;
+	right:110px;
+	direction: ltr;
+	z-index:3;
+	color: 	#fde16d;
+}
+
+#rate3{
+	font-weight: bold;
+	font-size: 1.2rem;
+	position: relative;
+	top:-24px;
+	right:110px;
+	direction: ltr;
+	z-index:3;
+	color: 	#fde16d;
+}
+
+.ratings {
+	direction: ltr;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #b1b1b1;
+    overflow: hidden;
+	top:-27px;
+	right:90px;
+	
+}
+.full-stars {
+	direction: ltr;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fde16d;
+	width:50%;
+}
+.empty-stars:before, .full-stars:before {
+    content:"\2605\2605\2605\2605\2605";
+    font-size: 14pt;
+}
+.empty-stars:before {
+    -webkit-text-stroke: 1px #848484;
+}
+.full-stars:before {
+    -webkit-text-stroke: 1px orange;
+}
+/* Webkit-text-stroke is not supported on firefox or IE */
+
+/* Firefox */
+ @-moz-document url-prefix() {
+    .full-stars {
+        color: #ECBE24;
+    }
+}
+
+
+
 
 #res1{
 	
