@@ -1,21 +1,5 @@
 
 
-function loadHomePage(){
-	document.getElementsByClassName('m1')[0].innerHTML = 'This isjjj box';
-	document.getElementsByClassName('m1').backgroundColor = 'red';
-
-}
-
-$(document).ready(function() {
-  // Gets the span width of the filled-ratings span
-  // this will be the same for each rating
-  var star_rating_width = $('.fill-ratings span').width();
-  // Sets the container of the ratings to span width
-  // thus the percentages in mobile will never be wrong
-  $('.star-ratings').width(star_rating_width);
-});
-
-
 function loadJSON()
 {
 var xmlhttp = new XMLHttpRequest();
@@ -50,7 +34,7 @@ xmlhttp.onreadystatechange = function() {
 	document.getElementById("res2").style.background= "url("+myObj.restaurants[1].imgUrl+")";
 	document.getElementById("res2").style.backgroundSize = "100% 100%" ;
 	document.getElementById("resP2").innerHTML=myObj.restaurants[1].name;
-	document.getElementById("resFood2").innerHTML=myObj.restaurants[1].foods[0]+" &bull; "+myObj.restaurants[1].foods[1]+" &bull; "+myObj.restaurants[1].foods[2]+" &bull; "+myObj.restaurants[0].foods[3];
+	document.getElementById("resFood2").innerHTML=myObj.restaurants[1].foods[0]+" &bull; "+myObj.restaurants[1].foods[1]+" &bull; "+myObj.restaurants[1].foods[2]+" &bull; "+myObj.restaurants[1].foods[3];
     document.getElementById("resAdd2").innerHTML=myObj.restaurants[1].address;	
 	var rate2=parseFloat(myObj.restaurants[1].rate);
 	var perc2=(rate2/5)*100;
@@ -61,7 +45,7 @@ xmlhttp.onreadystatechange = function() {
 	document.getElementById("res3").style.background= "url("+myObj.restaurants[2].imgUrl+")";
 	document.getElementById("res3").style.backgroundSize = "100% 100%" ;
 	document.getElementById("resP3").innerHTML=myObj.restaurants[2].name;
-	document.getElementById("resFood3").innerHTML=myObj.restaurants[2].foods[0]+" &bull; "+myObj.restaurants[2].foods[1]+" &bull; "+myObj.restaurants[2].foods[2]+" &bull; "+myObj.restaurants[0].foods[3];
+	document.getElementById("resFood3").innerHTML=myObj.restaurants[2].foods[0]+" &bull; "+myObj.restaurants[2].foods[1]+" &bull; "+myObj.restaurants[2].foods[2]+" &bull; "+myObj.restaurants[2].foods[3];
     document.getElementById("resAdd3").innerHTML=myObj.restaurants[2].address;
 	var rate3=parseFloat(myObj.restaurants[2].rate);
 	var perc3=(rate3/5)*100;
@@ -130,12 +114,16 @@ function myFunction(xml) {
   
   for (i = 4; i< x.length; i++) {
     txt= x[i].childNodes[0].nodeValue;
-  //var gr=document.getElementById("Foodbar");
-  //var par =document.createElement(div,class="bar");
-  //var chil =document.createElement(div,class="FB1");
-  //par.appendChild(chil);
-  //gr.appendChild(par);
-  document.getElementById("Foodbar").getElementsByClassName("FB1")[i-4].innerHTML = x[i].childNodes[0].nodeValue;
+	g = document.createElement('div');
+	var gr=document.getElementById("Foodbar");
+	var par =document.createElement('div');
+	par.setAttribute("class", "bar");
+	var chil =document.createElement('div');
+	chil.setAttribute("class", "FB1");
+	chil.innerHTML=x[i].childNodes[0].nodeValue;
+	par.appendChild(chil);
+	gr.appendChild(par);
+  //document.getElementById("Foodbar").getElementsByClassName("FB1")[i-4].innerHTML = x[i].childNodes[0].nodeValue;
   }
   
 }
